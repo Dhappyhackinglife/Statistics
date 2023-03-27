@@ -1,6 +1,13 @@
 Summary
-It divides a function with tiny number that is applied with le-5 apparently to see how the difference of the results of the function changes.
-This is a Major Branch, which is called differential calculus; The other is integral calculus.
-This deals with instantaneous rates of change and the slope of curves. 
-The latter concerns accumulation of quanitites, and areas under or between curves.
-they are fundamental notions of convergence of infinite sequences and infinite series to a well defined limit.
+1) It divides a function with tiny number that is applied with le-5 apparently to see how the difference of the results of the function changes.
+2) This is a Major Branch, which is called differential calculus; The other is integral calculus.
+3) This deals with instantaneous rates of change and the slope of curves. 
+4) The latter concerns accumulation of quanitites, and areas under or between curves.
+5) they are fundamental notions of convergence of infinite sequences and infinite series to a well defined limit.
+
+Introduction
+1) It measures how the function works in a logical system by the slope btween point to point.
+2) function is divided by infinitesimal number to derive the derivetive from function.
+3) It is called Differential calclus as well.
+4) It is another function from a continous sequence of the movement that is descrived by function.
+5) Its main purpose is to find the explaination of changes of something moving. 
