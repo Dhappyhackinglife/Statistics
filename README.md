@@ -1,3 +1,2 @@
-Statistics
-For Data Scientists
+Statistics For Data Scientists
 
