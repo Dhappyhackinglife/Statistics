@@ -56,5 +56,5 @@
 >Conditional Probability Continued
 1. In case of one event, the other event is affected. we can layout all of outcomes with this situation. However, If we need a result of the opposite outcomes, which event B happend after event A, instead.
 2. Bayes' Theorem $$P(B|A) = \frac{P(A|B) * P(A)}{P(B)}$$ $$P(B) = P(A\ and\ B) + P(\text{Not}A\ and\ B)
-3. Alternative Method $$1= P(A|B)+P(\text{Not}A|B)$$ $$P(\text{Not}A|B) = 1-P(A|B)$$ $$P(\text{Not}A|B) = \Answer$$
+3. Alternative Method $$1= P(A|B)+P(\text{Not}A|B)$$ $$P(\text{Not}A|B) = 1-P(A|B)$$ $$P(\text{Not}A|B) = \ Answer$$
   
