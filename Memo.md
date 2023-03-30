@@ -51,5 +51,9 @@
 2. Tree Diagrams have following properties:
    - Each branch represents a specific set of events.
    - The probabilities the terminal branches( all possible sets of outcomes) sum to one.
-   - We multiply across braches (using the mutiplication rule) to calculate the probability.
+   - We multiply across braches (using the mutiplication rule) to calculate the probabilit that each branch(set of outcomes) will occur.
+3. Independent events: $P(A\ and\ B) = P(A) * P(B)$ because $P(B|A) = P(B)$
+>Conditional Probability Continued
+1. In case of one event, the other event is affected. we can layout all of outcomes with this situation. However, If we need a result of the opposite outcomes, which event B happend after event A, instead.
+2. Bayes' Theorem 
   
