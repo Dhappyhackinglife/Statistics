@@ -90,9 +90,11 @@ random.choice(am suze=size, replace= True/False)
    Notice that tow of the three values that fo into the `stats.pmf()` method are the parameters that define the binominal distribution: $n$ represents the number of trials and $p$ represents the probability of success.
 5. Using the Probability Mass Function over Range $$1-(the\ sum\ of\ the\ opposite\ values)
    - Summation is always 1
-   - It is used in a reverse way
+   - It is used in a reverse way  
 6. Cumulative Distiribution Function
    - The cumulative distribution function for a discrete random variable can be derived from the probablility mass function. However, instead of the probability of observing a specific value, the cumulative distribution function gives the probability of obseving a specific value **OR LESS**
    - The value of a cultivative distribution function at a given value is equal to the sum of the probabilities lower than it, with a value of 1 for the largest popssible number.
    - cumulative distribution functions are constantly increasing, so for two different numbers that the random variable could take on, the value of the function will always be greater for the larger number.
-   - Mathematically, this is represented as: $${\sf If}\ x_{1} < x_{2} {\to} {\sf CDF(x_{1})}<{\sf CDF(x_{2})}$$ 
+   - Mathematically, this is represented as: $${\sf If}\ x_{1} < x_{2} {\to} {\sf CDF(x_{1})}<{\sf CDF(x_{2})}$$
+7. Cumulative Distribution Function Continued
+   - To calculate the probability of a specific range by taking the difference between two values from the cumulative distribution function. Mathematically, $$P(3<=x<=6)=\ P(x<=6)-P(x<3)$$<p style="text-align: center;">OR</p>$$P(3<=x<=6)=\ P(x<=6)-P(x<=2)$$
