@@ -55,6 +55,44 @@
 3. Independent events: $P(A\ and\ B) = P(A) * P(B)$ because $P(B|A) = P(B)$
 >Conditional Probability Continued
 1. In case of one event, the other event is affected. we can layout all of outcomes with this situation. However, If we need a result of the opposite outcomes, which event B happend after event A, instead.
-2. Bayes' Theorem $$P(B|A) = \frac{P(A|B) * P(A)}{P(B)}$$ $$P(B) = P(A\ and\ B) + P(\text{Not}A\ and\ B)
+2. Bayes' Theorem $$P(B|A) = \frac{P(A|B) * P(A)}{P(B)}$$ $$P(B) = P(A\ and\ B) + P(\text{Not}A\ and\ B)$$
 3. Alternative Method $$1= P(A|B)+P(\text{Not}A|B)$$ $$P(\text{Not}A|B) = 1-P(A|B)$$ $$P(\text{Not}A|B) = \ Answer$$
-  
+
+>230325Wed
+1. Random Variables: A function to represent random events.(must be numeric) Code:
+
+```
+from numpy
+random.choice(am suze=size, replace= True/False)
+```
+- a: A list or other object that has values we are sampling from.
+- size: A number that represents how many values to choose.
+- replace can be equal to True or False, and determines whether we keep a value in a after drawing it. (replace= True) or Remove it from the pool (replace= False)
+2. Discrete and Continuous Random Variables
+   - Discrete Random Variables: Randome variables with a countable number of possible values. (When observing counting events)
+   - Continuous Random Variables: When the possible values of a random variable are uncountable, because measurements can always be more precise. etc: meters, degree
+3. Probability Mass Functions
+   - PMF is a type of probabnility distribution that defines the probability of observing a particular value of a discrete random variable.
+   - These are certain kinds of random variables (and associated probability distributions) that are relevent for many different kind of problems. These commonly ised probability distributions have names and parameters that make them adaptable for different situations.
+   - Binominal Distribution: The sum of the heights of all the bars will always equal 1.
+   - When $x$ is larger, the event that we observe increases, and the probability need to be divided between more values.
+4. Calculating Probabilities using Python
+   ```
+   import scipy
+   binom.pmf()
+   x: The value of interest (event)
+   n: The number of trials
+   p: The probability of success
+   #ex
+   import scupy.stats as stats
+   print(stats.bionom.pmf(6, 10, 0.5)
+   ```
+   Notice that tow of the three values that fo into the `stats.pmf()` method are the parameters that define the binominal distribution: $n$ represents the number of trials and $p$ represents the probability of success.
+5. Using the Probability Mass Function over Range $$1-(the\ sum\ of\ the\ opposite\ values)
+   - Summation is always 1
+   - It is used in a reverse way
+6. Cumulative Distiribution Function
+   - The cumulative distribution function for a discrete random variable can be derived from the probablility mass function. However, instead of the probability of observing a specific value, the cumulative distribution function gives the probability of obseving a specific value **OR LESS**
+   - The value of a cultivative distribution function at a given value is equal to the sum of the probabilities lower than it, with a value of 1 for the largest popssible number.
+   - cumulative distribution functions are constantly increasing, so for two different numbers that the random variable could take on, the value of the function will always be greater for the larger number.
+   - Mathematically, this is represented as: $${\sf If}\ x_{1} < x_{2} {\to} {\sf CDF(x_{1})}<{\sf CDF(x_{2})}$$ 
