@@ -98,3 +98,42 @@ random.choice(am suze=size, replace= True/False)
    - Mathematically, this is represented as: $${\sf If}\ x_{1} < x_{2} {\to} {\sf CDF(x_{1})}<{\sf CDF(x_{2})}$$
 7. Cumulative Distribution Function Continued
    - To calculate the probability of a specific range by taking the difference between two values from the cumulative distribution function. Mathematically, $$P(3<=x<=6)=\ P(x<=6)-P(x<3)$$<p style="text-align: center;">OR</p>$$P(3<=x<=6)=\ P(x<=6)-P(x<=2)$$
+8. Using the Cumulative Distribution Function in python
+   - We can use the `binom.cdf()` method from the `scipy.stats` library to calculate the cumulative distribution function.
+   - This method takes 3 values:
+     - `x`: The value of interest, looking for probability of this value or less
+     - `n`: The sample size
+     - `p`: The probability of success
+     - ex) 6 head out of 10 times flips. 
+     - $$P(6\ or\ fewer\ heads)=(P(0\ to\ 6heads)$$
+     - Python: 
+         ```
+         import scipy.stats as stats
+         print(stats.binom.cdf(4,10,0.5))
+         output: 0.828125
+         ```
+>230316 thu
+9. Probability Density Functions
+   - Similar to how discrete random variables relate to probability mass functions, continuous random variables relate to probability density functions.
+   - In a probability density function, we cannot calculate the probability at a single point. This is because the area of the curve underneath a single point is always zero.
+   - As the interval becomes smaller, the width of the area under the curve becomes smaller as well. Finally, it becomes zero, therefore, the probability equals 0.
+   - we can calculate the area under the curve using the culmulate distribution function for the given probability distributrion. For example, heights fall under a type of probability distribution called a nomal distribution. <br>    The parameters for the normal distribution are the mean and the standard deviation, ann use the nomal (mean, standard deviation) as shorthand. <br>   ex) mean value=168, standard deviation= 8, Normal Distribution(168, 8). <bar> code:
+   ```
+   import scipy.stats as stats
+   print(stats.norm.cdf(158, 167.64, 8)
+   output 0.1141
+   stats.norm.cdf(x, loc, scale)
+   ``` 
+   `x`= The value of interest <br>
+   `loc`= The mean of the probability distribution <br>
+   `scale`= The standard deviation of the probability distribution.
+10. Probability Density Functions and Cumulative Distribution Function
+   - We can take the difference between two overlapping ranges to calculate the probability that a random selection will be within a range of values for continuous distributions. This is essencially the same process as calculating the probability of a range of values for discrete distributions.
+>>More on Probability Distributions.
+1. Introduction to the Poisson Distribution <br> The poission distribution: To describe the number of times a certain event occurs within a fixed time or interval; defined by the rate parameter, symbolized by the Greek letter lambda, $\lambda$ <br>
+   Lambda$\lambda$ represents the expected value (or the average value)of distribution.
+2. Calculating Probabilities of Exact Values Using the Probability Mass Function
+   - The Poission Distribution is a Discrete Probability Distribution, so it can be described by a probability mass function and cumulative distribution function. `poisson.pmf() for scipy.stats` <br>
+   Limit(mathematics): A limit is value that a function (or sequence) approaches as the input (or index) approaches some values.
+>230320Mon
+1.
